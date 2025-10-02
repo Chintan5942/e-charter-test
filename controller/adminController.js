@@ -337,7 +337,6 @@ const deleteFleetPartnerByAdmin = asyncHandler(async (req, res) => {
   }
 });
 
-
 // Admin: Edit Fleet Partner
 const editFleetPartnerByAdmin = asyncHandler(async (req, res) => {
   const { driver_id } = req.params;
@@ -425,7 +424,6 @@ const editFleetPartnerByAdmin = asyncHandler(async (req, res) => {
     res.status(500).json({ message: "Internal server error", error: error.message });
   }
 });
-
 
 // Get payout summary for admin - FIXED with proper data formatting
 const getPayoutSummary = asyncHandler(async (req, res) => {
